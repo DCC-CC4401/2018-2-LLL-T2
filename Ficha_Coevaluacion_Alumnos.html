@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Ficha Coevaluación Alumnos</title>
+      <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Iconos importados de google material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+<!--Barra de arriba -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Coevaluator</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarCursos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cursos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarCursos">
+          <a class="dropdown-item" href="#">Mis Cursos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Agregar Curso</a>
+          <a class="dropdown-item" href="#">Eliminar Curso</a>
+          <a class="dropdown-item" href="#">Modificar Curso</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarCoevaluaciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Coevaluaciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarCoevaluaciones">
+          <a class="dropdown-item" href="#">Mis Coevaluaciones</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Agregar Coevaluaci&oacute;n</a>
+          <a class="dropdown-item" href="#">Eliminar Coevaluaci&oacute;n</a>
+          <a class="dropdown-item" href="#">Modificar Coevaluaci&oacute;n</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
