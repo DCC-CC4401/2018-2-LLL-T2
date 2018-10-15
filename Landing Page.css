@@ -8,20 +8,22 @@ body {
 }
 
 /*
-* Global add-ons
+* Ediciones con tags
 */
 
-#perfil{
+#letrasBlancas{
   color: white;
 }
 
 #perfilImagen{
-  color: white;
   font-size: 100px;
   text-align: center;
   padding-left: 30px;
 }
 
+/*
+* Global add-ons
+*/
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
