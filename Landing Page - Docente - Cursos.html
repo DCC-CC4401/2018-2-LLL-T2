@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../../../favicon.ico">
 
-  <title>Landing Page - Docente</title>
+  <title>Landing Page - Docente - Cursos</title>
 
   <!-- CSS de Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,11 +28,11 @@
     <a class="navbar-brand" href="#">Coevaluator</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#">Cursos</a>
         </li>
         <li class="nav-item">
@@ -97,18 +97,76 @@
 
       <!--Lo que aparece adentro de la página-->
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      </main>
-    </div>
-  </div>
+        <div class="justify-content-between pt-3 pb-2 mb-3">
+          <h1 class="h2">Resumen Cursos</h1>
+          <!--Tabla con las ultimas coevaluaciones-->
+          <table class="table table-striped table-sm">
+            <thead>
+              <th scope="col">Nombre</th>
+              <th scope="col">Código</th>
+              <th scope="col">Rol</th>
+              <th scope="col">Grupo</th>
+              <th scope="col">Año - Semestre</th>
+            </th>
+          </thead>
+        </tr>
+        <tbody>
+          <tr>
+            <td><a href = #>Proyecto de Software</a></td>
+            <td>CC5402-1</td>
+            <td><span class = "material-icons">face</span> Profesor</td>
+            <td> - </td>
+            <td>2018-2</td>
+          </tr>
+          <tr>
+            <td><a href = #>Ingeniería de Software II</a></td>
+            <td>CC5401-1</td>
+            <td><span class = "material-icons">face</span> Profesor</td>
+            <td> - </td>
+            <td>2018-1</td>
+          </tr>
+          <tr>
+            <td><a href = #>Ingeniería de Software I</a></td>
+            <td>CC5401-1</td>
+            <td><span class = "material-icons">sentiment_satisfied</span> Auxiliar</td>
+            <td> - </td>
+            <td>2018-2</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h1 class="h2">Agregar Cursos</h1>
+      <form class="form-inline my-2 my-lg-0">
+        Nombre Curso:
+        <input class="form-control mr-sm-2" type="text" placeholder="Ej: Ingeniería de Software I">
+      </form>
+      <form class="form-inline my-2 my-lg-0">
+        Código Curso:
+        <input class="form-control mr-sm-2" type="text" placeholder="Ej: CC4401">
+      </form>
+      <form class="form-inline my-2 my-lg-0">
+        Año-Semestre:
+        <input class="form-control mr-sm-2" type="text" placeholder="Ej: 2018-2">
+      </form>
+      <div>
+        <button class="btn btn-outline-success my-2 my-sm-0">Añadir alumnos desde archivo</button>
+      </div>
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="../../assets/js/vendor/popper.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js" ></script>
-  <script src="js/bootstrap.min.js"></script>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Agregar Curso</button>
+
+    </div>
+  </main>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
