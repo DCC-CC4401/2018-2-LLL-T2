@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Configuración para el html-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Perfil</title>
+
+  <!-- CSS de Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  -->
+  <link href="Landing Page.css" rel="stylesheet">
+
+  <!-- Iconos importados de google material -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <!--Barra de arriba -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="collapse navbar-collapse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">HOME</a>
+          </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Perfil<span class="sr-only">(current)</span></a>
+        </li>
+        <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarCursos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarCursos">
+            <a class="dropdown-item" href="#">Mis Cursos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Agregar Curso</a>
+            <a class="dropdown-item" href="#">Eliminar Curso</a>
+            <a class="dropdown-item" href="#">Modificar Curso</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarCoevaluaciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Coevaluaciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarCoevaluaciones">
+            <a class="dropdown-item" href="#">Mis Coevaluaciones</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Agregar Coevaluaci&oacute;n</a>
+            <a class="dropdown-item" href="#">Eliminar Coevaluaci&oacute;n</a>
+            <a class="dropdown-item" href="#">Modificar Coevaluaci&oacute;n</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log-Out</a>
+        </li>
+      </ul>
+      <!--Form para el buscador de alumnos-->
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar por RUT" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--Barra lateral izquierda-->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block navbar-dark sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class = "material-icons" id="perfilImagen" >account_circle</span>
+                    <p>Profesor X</p>
+                  </a>
+                </li>
+            <li class="nav-item">
+              <p id="letrasBlancas">Cursos Actuales</p>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons">face</span>
+                CC5402-1<br/>
+                <small>&emsp;&emsp; 2018-2</small>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons">face</span>
+                CC4401-1 <br/>
+                <small>&emsp;&emsp; 2018-1</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Lo que aparece adentro de la página-->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="justify-content-between pt-3 pb-2 mb-3">
+          <h1 class="h2">Perfil Usuario<span class = "material-icons">account_box</span></h1>
+
+          <!--Datos Alumno-->
+          <div class="container-fluid">
+            
+            <div class="row">
+              <div class="col-lg-6 bg-light">
+                  <dl>
+                    <dt>Nombre:</dt>
+                      <dd> Cosme Fulanito</dd>
+                    <dt>RUT:</dt>
+                      <dd>10.876.432-0</dd>
+                    <dt>E-mail:</dt>
+                      <dd>incognito@dcc.uchile.cl</dd>
+                  </dl>
+                  
+
+                  <!--Visualizacion de cursos-->
+                    <h2>Cursos</h2>
+                    <table class="table table-striped table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Semestre-Año</th>
+                            <th scope="col">Notas</th>
+                          </th>
+                        </thead>
+                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>Proyecto de SW</td>
+                          <td>CC5402-1</td>
+                          <td>Alumno</td>
+                          <td>2-2018</td>
+                          <td><a href="#"><span class = "material-icons" 
+                            onClick="document.getElementById('Notas1').style.visibility='visible'
+                            document.getElementById('Notas2').style.visibility='hidden'
+                            document.getElementById('Notas3').style.visibility='hidden'
+                            document.getElementById('Notas4').style.visibility='hidden'
+                            document.getElementById('stdmsg').style.visibility='hidden'">
+                            visibility</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>Ingeniería de SW</td>
+                            <td>CC4401-1</td>
+                            <td>Auxiliar</td>
+                            <td>2-2018</td>
+                            <td><a href="#"><span class = "material-icons" 
+                              onClick="document.getElementById('Notas1').style.visibility='hidden'
+                              document.getElementById('Notas2').style.visibility='visible'
+                              document.getElementById('Notas3').style.visibility='hidden'
+                              document.getElementById('Notas4').style.visibility='hidden'
+                              document.getElementById('stdmsg').style.visibility='hidden'">
+                              visibility</span></a></td>
+                          </tr>
+                        
+                        <tr>
+                          <td>Ingeniería de SW</td>
+                          <td>CC4401-1</td>
+                          <td>Alumno</td>
+                          <td>1-2017</td>
+                          <td><a href="#"><span class = "material-icons" 
+                            onClick="document.getElementById('Notas1').style.visibility='hidden'
+                            document.getElementById('Notas2').style.visibility='hidden'
+                            document.getElementById('Notas3').style.visibility='hidden'
+                            document.getElementById('Notas4').style.visibility='visible'
+                            document.getElementById('stdmsg').style.visibility='hidden'">
+                            visibility</span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                
+              </div>
+              <div class="col-lg-6 bg-light ">
+                  <div class="container">
+                    <h2>Información</h2>
+                    <!-- La siguiente estructura es solo de ayuda,
+                    para visualizar la función del icono 'visibility'-->
+                        <div id="stdmsg" style="visibility:visible">
+                            <p>Haga click en <span class="material-icons">visibility</span>
+                            para ver información sobre el respectivo curso</p>
+                        </div> 
+                        <div id="Notas1" style="visibility:hidden">
+                           Resumen de notas de CC5400-1 Primavera de 2018...
+                          </div> 
+                        <div id="Notas2" style="visibility:hidden">
+                           No tiene coevaluaciones aqui, su rol es de auxiliar
+                        </div> 
+                        <div id="Notas3" style="visibility:hidden">
+                            Resumen de notas de CC5401-1 Otoño de 2018...
+                        </div> 
+                    
+                      <div id="Notas4" style="visibility:hidden">
+                        Resumen de notas de CC4401-1 Otoño de 2017...
+                      </div> 
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+
+              
+              </div>
+          </div>
+          
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
