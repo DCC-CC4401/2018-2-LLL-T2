@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Configuración para el html-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Landing Page - Docente - Coevaluaciones</title>
+
+  <!-- CSS de Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  -->
+  <link href="Landing Page - Docente.css" rel="stylesheet">
+
+  <!-- Iconos importados de google material -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <!--Barra de arriba -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Coevaluator</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cursos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            Coevaluaciones
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log-Out</a>
+        </li>
+      </ul>
+      <!--Form para el buscador de alumnos-->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar por RUT" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--Barra lateral izquierda-->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block navbar-dark sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons" id="perfilImagen" >account_circle</span>
+                <p>Emilio Vicente Lizama Castro</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <p id="letrasBlancas">Cursos Actuales</p>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons">face</span>
+                Proyecto de Software<br/>
+                <small>CC5402-1</small>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons">face</span>
+                Ingeniería de Software II<br/>
+                <small>CC5401-1</small>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class = "material-icons">sentiment_satisfied</span>
+                Ingeniería de Software I<br/>
+                <small>CC4401-1</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Lo que aparece adentro de la página-->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="justify-content-between pt-3 pb-2 mb-3">
+          <h1 class="h2">Resumen Coevaluaciones</h1>
+          <!--Tabla con las ultimas coevaluaciones-->
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Curso</th>
+                <th scope="col">Fecha de Entrega</th>
+                <th scope="col">Estado</th>
+                <th scopre="col">Enviar Resultados</th>
+              </th>
+            </thead>
+          </tr>
+          <tbody>
+            <tr>
+              <td><a href=#>Coevaluación 1 <span class = "material-icons">edit</span> </a></td>
+              <td>Proyecto de Software</td>
+              <td>31-12-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr>
+              <td><a href=#>Coevaluación 5 <span class = "material-icons">edit</span> </a></td>
+              <td>Proyecto de Software</td>
+              <td>31-11-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr>
+              <td><a href=#>Coevaluación Final <span class = "material-icons">edit</span> </a></td>
+              <td>Proyecto de Software</td>
+              <td>10-11-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr>
+              <td><a href=#>Coevaluación 2 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software II</td>
+              <td>9-10-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr>
+              <td><a href=#>Coevaluación 4 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software II</td>
+              <td>7-10-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr>
+              <td><a href=#>Coevaluación 1 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software II</td>
+              <td>6-10-2018</td>
+              <td>En plazo</td>
+              <td>Aún no termina el plazo</td>
+            </tr>
+            <tr class="table-danger">
+              <td><a href=#>Coevaluación 3 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software I</td>
+              <td>30-08-2018</td>
+              <td>Plazo finalizado</td>
+              <td><button class="btn btn-outline-success my-2 my-sm-0">Enviar</button></td>
+            </tr>
+            <tr class="table-danger">
+              <td><a href=#>Coevaluación 16 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software I</td>
+              <td>6-07-2018</td>
+              <td>Plazo finalizado</td>
+              <td><button class="btn btn-outline-success my-2 my-sm-0">Enviar</button></td>
+            </tr>
+            <tr class="table-success">
+              <td><a href=#>Coevaluación 85 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software I</td>
+              <td>5-06-2018</td>
+              <td>Plazo finalizado</td>
+              <td>Resultados ya enviados</td>
+            </tr>
+            <tr class="table-success">
+              <td><a href=#>Coevaluación 4 <span class = "material-icons">edit</span> </a></td>
+              <td>Ingeniería de Software I</td>
+              <td>30-05-2018</td>
+              <td>Plazo finalizado</td>
+              <td>Resultados ya enviados</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <h1 class="h2">Agregar Coevaluación</h1>
+        <div class="form-group form-inline">
+          <label for="sel1">Curso:</label>
+          <select class="form-control" id="sel1">
+            <option>Proyecto de Software</option>
+            <option>Ingeniería de Software II</option>
+            <option>Ingeniería de Software I</option>
+          </select>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          Fecha de entrega:
+          <input class="form-control mr-sm-2" type="text" placeholder="dd-mm-yyyy">
+        </form>
+        <form class="form-inline my-2 my-lg-0">
+          Preguntas escala 1 al 7:
+          <input class="form-control mr-sm-2" type="text" placeholder="Nombre de la Pregunta">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Añadir Pregunta</button>
+        </form>
+        <form class="form-inline my-2 my-lg-0">
+          Preguntas texto libre:
+          <input class="form-control mr-sm-2" type="text" placeholder="Nombre de la Pregunta">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Añadir Pregunta</button>
+        </form>
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Ocupar preguntas predefinidas</label>
+        </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Agregar Coevaluación</button>
+
+
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
