@@ -14,29 +14,35 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<!--Barra de arriba -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Coevaluator</a>
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cursos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          Coevaluaciones
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Log-Out</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
+  <!--Barra de arriba -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Coevaluator</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <!--Hacer un item con dropdown (para Cursos por ejemplo)-->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Coevaluaciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log-Out</a>
+          </li>
+        </ul>
+        <!--Form para el buscador de alumnos-->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar por RUT o Nombre" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
 
 <!--Barra lateral izquierda-->
 <div class="container-fluid">
