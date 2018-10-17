@@ -88,7 +88,8 @@
       <!--Lo que aparece adentro de la página-->
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="justify-content-between pt-3 pb-2 mb-3">
-          <h1 class="h2">Perfil Usuario<span class = "material-icons">account_box</span></h1>
+          <div class="h1 text-left">Perfil Estudiante</div>
+          <hr>
 
           <!--Datos Alumno-->
           <div class="container-fluid">
@@ -166,25 +167,34 @@
               <div class="col-lg-6 bg-light ">
                   <div class="container">
                     <h2>Información</h2>
-                    <!-- La siguiente estructura es solo de ayuda,
-                    para visualizar la función del icono 'visibility'-->
-                        <div id="stdmsg" style="visibility:visible">
-                            <p>Haga click en <span class="material-icons">visibility</span>
-                            para ver información sobre el respectivo curso</p>
-                        </div> 
-                        <div id="Notas1" style="visibility:hidden">
-                           Resumen de notas de CC5400-1 Primavera de 2018...
-                          </div> 
-                        <div id="Notas2" style="visibility:hidden">
-                           No tiene coevaluaciones aqui, su rol es de auxiliar
-                        </div> 
-                        <div id="Notas3" style="visibility:hidden">
-                            Resumen de notas de CC5401-1 Otoño de 2018...
-                        </div> 
-                    
-                      <div id="Notas4" style="visibility:hidden">
-                        Resumen de notas de CC4401-1 Otoño de 2017...
-                      </div> 
+                                 <!--Tabla con las ultimas coevaluaciones-->
+          <table class="table table-sm table-striped" id = "Notas1" style="visibility:hidden">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Curso</th>
+                  <th scope="col">Nota</th>
+                </th>
+              </thead>
+            </tr>
+            <tbody>
+              <tr class="table-success">
+                <td><a href = #>Coevaluación 3</a></td>
+                <td><a href = #>Proyecto de Software</a></td>
+                <td>5.0</td>
+              </tr>
+              <tr class="table-success">
+                  <td><a href = #>Coevaluación 2</a></td>
+                  <td><a href = #>Proyecto de Software</a></td>
+                  <td>6.0</td>
+              </tr>
+              <tr class="table-success">
+                <td><a href = #>Coevaluación 1</a></td>
+                <td><a href = #>Proyecto de Software</a></td>
+                <td>7.0</td>
+              </tr>
+            </tbody>
+          </table>
                   </div>
               </div>
             </div>
