@@ -113,47 +113,71 @@
           <tr>
             <td><a href = #>Proyecto de Software</a></td>
             <td>CC5402-1</td>
-            <td><span class = "material-icons">face</span> Profesor</td>
+            <td><span class = "material-icons">face</span> Auxiliar</td>
             <td> - </td>
             <td>2018-2</td>
           </tr>
           <tr>
             <td><a href = #>Ingeniería de Software II</a></td>
             <td>CC5401-1</td>
-            <td><span class = "material-icons">face</span> Profesor</td>
+            <td><span class = "material-icons">face</span> Auxiliar</td>
             <td> - </td>
             <td>2018-1</td>
           </tr>
           <tr>
             <td><a href = #>Ingeniería de Software I</a></td>
             <td>CC5401-1</td>
-            <td><span class = "material-icons">sentiment_satisfied</span> Auxiliar</td>
+            <td><span class = "material-icons">sentiment_satisfied</span> Profesor</td>
             <td> - </td>
             <td>2018-2</td>
           </tr>
         </tbody>
       </table>
-      <hr>
-      <h1 class="h2">Agregar Cursos</h1>
-      <form class="form-inline my-2 my-lg-0">
-        Nombre Curso:
-        <input class="form-control mr-sm-2" type="text" placeholder="Ej: Ingeniería de Software I">
-      </form>
-      <form class="form-inline my-2 my-lg-0">
-        Código Curso:
-        <input class="form-control mr-sm-2" type="text" placeholder="Ej: CC4401">
-      </form>
-      <form class="form-inline my-2 my-lg-0">
-        Año-Semestre:
-        <input class="form-control mr-sm-2" type="text" placeholder="Ej: 2018-2">
-      </form>
-      <div>
-        <button class="btn btn-outline-success my-2 my-sm-0">Añadir alumnos desde archivo</button>
+
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#idTarget">Agregar Curso</button>
+      <div class="modal fade" id="idTarget">
+
+        <!-- PopUp Agregar Curso-->
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+              <h3 class="modal-title">Agregar Curso</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!--Body(form)-->
+            <div class="modal-body">
+              <div class="form-group">
+                Código Curso:
+                <input class="form-control mr-sm-2" type="text" placeholder="Ej: CC4401">
+              </div>
+              <div class ="form-group">
+                <form>
+                  Nombre de Curso:
+                </form>
+              </div>
+              <div class="form-group">
+                Número de sección:
+                <input class="form-control mr-sm-2" type="number">
+              </div>
+              <div class="form-group">
+                Año-Semestre:
+                <input class="form-control mr-sm-2" type="text" placeholder="Ej: 2018-1">
+              </div>
+              <div class = "form-group">
+                <button class="btn btn-outline-success my-2 my-sm-0">Añadir alumnos desde archivo</button>
+              </div>
+
+            </div>
+            <!--Button-->
+            <div class="modal-footer">
+              <button class="btn btn-success btn-block">Confirmar</button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Agregar Curso</button>
-
     </div>
+
   </main>
 </div>
 </div>
